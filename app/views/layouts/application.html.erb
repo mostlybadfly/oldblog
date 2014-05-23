@@ -2,12 +2,21 @@
 <html>
 <head>
   <title>recetera</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
+<body bgcolor="#E6E6FA">
+      <div id="header">
+          <div id="navbar pull-right">
+    		    <div class="btn-group navbar-right">
+    		      <a href="/"><button type="button" class="btn btn-default">Home</button></a>
+    		      <a href="/about"><button type="button" class="btn btn-default">About</button></a>
+    	      </div>
+	        </div>
+        <h1>recetera!</h1>
+      </div>
 <%= yield %>
 
 </body>
