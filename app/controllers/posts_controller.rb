@@ -20,18 +20,19 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
   
-  def edit
+  def update
     @post = Post.find(params[:id])
+   
     if @post.update(post_params)
       redirect_to @post
     else
-      render 'edit'
+      render 'update'
     end
   end
   
   private
-  def post_params
-    params.require(:post).permit(:title, :text)
-  end
+    def post_params
+      params.require(:post).permit(:title, :text)
+    end
   
 end
