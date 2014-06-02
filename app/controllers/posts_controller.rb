@@ -41,6 +41,8 @@ class PostsController < ApplicationController
     @post.destroy
     
     redirect_to posts_path
+  def edit
+    @post = Post.find(params[:id])
   end
   
   private
