@@ -22,10 +22,6 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
   
-  def edit
-    @post = Post.find(params[:id])
-  end
-  
   def update
     @post = Post.find(params[:id])
    
@@ -41,6 +37,7 @@ class PostsController < ApplicationController
     @post.destroy
     
     redirect_to posts_path
+
   def edit
     @post = Post.find(params[:id])
   end
