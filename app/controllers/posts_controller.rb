@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  
+  before_filter :authenticate_user, except: [:index, :show]
    
   def new
     @post = Post.new
@@ -43,7 +43,12 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
   
-  private
+private
+  
+  def authenticate_user
+    raise ActionController::RoutingError unless signed_in?
+  end
+  
     def post_params
       params.require(:post).permit(:title, :text)
     end
