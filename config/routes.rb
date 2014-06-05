@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/about', to: 'about#index'
   get '/blog', to: 'posts#index'
   
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, only: [:create, :destroy]
  
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
