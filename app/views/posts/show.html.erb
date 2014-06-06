@@ -9,7 +9,7 @@
         <div class="col-md-4">
           <ul class="post-list text-justify body-text">
             <li><%= simple_format @post.text %></li>
-            <li><%= @post.created_at.in_time_zone("Central Time (US & Canada)").to_formatted_s(:long) %>
+            <li><%= @post.created_at.in_time_zone("Central Time (US & Canada)").to_formatted_s(:long) %></li>
             <% if signed_in? %>
             <li>
             <%= link_to 'Edit', edit_post_path(@post) %>

@@ -13,6 +13,7 @@
           <ul class="post-list text-justify body-text">
             <li class="post-title"><%= link_to post.title, post_path(post)  %></li>
             <li><%= post.text %></li>
+            <li><%= post.created_at.in_time_zone("Central Time (US & Canada)").to_formatted_s(:long) %></li>
           </ul>
         </div>
         <div class="col-md-4"></div>
