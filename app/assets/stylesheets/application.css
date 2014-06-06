@@ -18,6 +18,10 @@ body{
   background-color:#E6E6FA;
 }
 
+.body-text {
+  padding-top:25px;
+}
+
 h1 {
   font-size:40px;
 	padding-top: 5px;
@@ -34,16 +38,12 @@ h1 {
 .header {
   position:relative;
   background-color:#00BB60;
-  top:-25px;
+  top:-20px;
+  border-bottom: 2px solid #990000;
 }
 
 a:link {
   text-decoration:none;
-}
-
-
-.body-text {
-  padding-left:5px;
 }
 
 .date {
@@ -71,18 +71,27 @@ h2 {
   margin-right:auto;
 }
 
-li {
+.header li {
   display:inline;
-  padding:5px;
+  padding-right:25px;
 }
 
-li a {
+.header a {
   padding:10px;
   font-weight:bold;
   font-size:20px;
   color:#CCDDFF;
 }
 
-ul {
+.header ul {
   padding-top:15px;
+}
+
+.post-list li {
+  display:block;
+}
+
+.post-title {
+  font-style:oblique;
+  font-weight:bold;
 }
