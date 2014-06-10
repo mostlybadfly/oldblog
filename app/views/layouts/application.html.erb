@@ -8,16 +8,24 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-        <div class="header">
-            <div id="navbar pull-right">
-      		    <ul class="navbar-right">
-      		      <li><a href="/">Home</a></li>
-      		      <li><a href="/about">About</a></li>
-      		      <li><a href="/blog">Blog</a></li>
-      	      </ul>
-  	        </div>
-          <h1>recetera!</h1>
-        </div>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">recetera!</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="<%= 'active' if current_page?('/') %>"><a href="/">home</a></li>
+          <li class="<%= 'active' if current_page?('/about') %>"><a href="/about">about</a></li>
+          <li class="<%= 'active' if current_page?('/blog') %>"><a href="/blog">blog</a></li>
+        </ul>
+      </div>
+    </div>
   <%= yield %>
   
   </body>
