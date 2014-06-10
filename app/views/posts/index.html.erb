@@ -4,28 +4,30 @@
 	</head>
   <body>
   
-  <div class="jumbotron posts"
-  <div class="container">
-    <img src="https://farm6.staticflickr.com/5509/14129370118_122bece6f4_h.jpg">
-  </div>
-</div>
-    <div class="body-text">
-    <h3 class="text-center">posts</h3>
-    
-    <% @posts.each do |post| %>
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <ul class="post-list text-justify body-text">
-            <li class="post-title"><%= link_to post.title, post_path(post)  %></li>
-            <li><%= simple_format truncate(post.text, length: 500) %></li>
-            <li><%= post.created_at.in_time_zone("Central Time (US & Canada)").to_formatted_s(:long) %></li>
-          </ul>
-        </div>
-        <div class="col-md-4"></div>
+    <div class="jumbotron posts"
+      <div class="container">
+        <img src="https://farm6.staticflickr.com/5509/14129370118_122bece6f4_h.jpg">
       </div>
-      <br><br>
     </div>
+    
+    <div class="body-text">
+      <h3 class="text-center">posts:</h3>
+    
+      <% @posts.each do |post| %>
+        <div class="container body-text">
+          <div class="row text-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <ul class="post-list text-justify body-text">
+                <li class="post-title"><%= link_to post.title, post_path(post)  %></li>
+                <li><%= simple_format truncate(post.text, length: 500) %></li>
+                <li><%= post.created_at.in_time_zone("Central Time (US & Canada)").to_formatted_s(:long) %></li>
+              </ul>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+        <br><br>
+        </div>
     <% end %>
 
 </body>
