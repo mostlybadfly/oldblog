@@ -48,3 +48,5 @@ end
 gem 'bcrypt', '~> 3.1.7'
 
 ruby '2.1.1'
+
+gem 'rails_autolink'
