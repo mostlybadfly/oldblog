@@ -55,26 +55,26 @@ body {
 
 
 .bigpic1 {
-  background: url('https://farm4.staticflickr.com/3814/9331618404_7fb21d84a7_h.jpg');
+  background: url('https://farm4.staticflickr.com/3756/9431415506_255d62732d_h.jpg');
     background-size: cover;
-    height: 400px;
-    background-position-y: 30%;
+    height: 500px;
+    background-position-y: 60%;
     width:100%;
 }
 
 .bigpic2 {
-  background: url('https://farm4.staticflickr.com/3672/9440005938_a68f0f3cea_o.jpg');
+  background: url('https://farm4.staticflickr.com/3672/9440005938_87bd3a6554_h.jpg');
     background-size: cover;
-    height: 400px;
-    background-position-y: 60%;
+    height: 500px;
+    background-position-y: 65%;
     width:100%;
 }
 
 .bigpic3 {
   background: url('https://farm6.staticflickr.com/5509/14129370118_122bece6f4_h.jpg');
     background-size: cover;
-    height: 400px;
-    background-position-y: 30%;
+    height: 500px;
+    background-position-y: 50%;
     width:100%;
 }
 
