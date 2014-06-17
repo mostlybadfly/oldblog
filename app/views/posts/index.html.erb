@@ -16,7 +16,7 @@
             <div class="col-md-4">
               <ul class="post-list text-justify body-text">
                 <li class="post-title"><%= link_to post.title, post_path(post)  %></li>
-                <li><%= simple_format truncate(post.text, length: 500) %></li>
+                <li><%= auto_link(simple_format truncate(post.text, length: 500)) %></li>
                 <li><%= post.created_at.in_time_zone("Central Time (US & Canada)").to_formatted_s(:long) %></li>
               </ul>
             </div>
