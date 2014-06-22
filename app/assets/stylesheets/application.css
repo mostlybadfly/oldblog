@@ -23,6 +23,10 @@ body {
   border-bottom: 3px solid #990000;
 }
 
+.navbar-nav a {
+  font-size:20px;
+}
+
 .navbar-default .navbar-brand {
     color: #CCDDFF;
 }
@@ -79,11 +83,6 @@ body {
 }
 
 
-.whole {
-  height:800px;
-}
-
-
 .navbar-brand {
   font-size:40px;
 }
@@ -127,7 +126,19 @@ h2 {
   font-weight:bold;
 }
 
-.whole {
-  display:inline;
-  height:100%;
+.social {
+  padding-top:25px;
+}
+
+.social li {
+  display: inline;
+  padding: 30px;
+}
+
+.social a {
+  color:#990000;
+}
+
+.social a:hover {
+  color:#33AA66;
 }
