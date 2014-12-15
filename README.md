@@ -1,3 +1,2 @@
-#¡Recetera!
-
-this is my main project at the moment.  the goal is to create a recipe building app.  i will develop this as i learn more about building a web application.  check back frequently and feel free to provide feedback.
+This is the old format for my blog prior to playing with Jekyll.
+This  blog was built using Rails to post blog entries using a single user model.
